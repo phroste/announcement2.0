@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Legion</title>
+
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
+
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+	<style type="text/css">
+		
+	/*keyframe animation - when homescreen is clicked, the screen fades into the next frame*/
+	@keyframes screen {
+	0% {
+		opacity: 0;
+	}
+	70% {
+		opacity: .5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+	
+	/*z-index gives a layer effect to the fade in keyframe, opacity animation is set at full 2 seconds*/
+	#para {
+		z-index: 1;
+		animation: screen 1s ease-in 0s;
+	}
+
+	</style>
+
+	</head>
+
+<div id="para">
+<body>
+
+	<header>
+		<div id="logo">
+			<!-- Legion Logo or text position fixed at top of page -->
+			<div><img src="images/logo2.png"><div>
+		</div>
+
+			<!-- position: fixed in CSS to have a fixed nav bar -->
+		<div id="navbar">
+		
+			
+				<div><a class="navlinks" href="index.html">Home</a></div>
+				<div><a class="navlinks" href="about.html">About</a></div>
+				<div><a class="navlinks" href="cast.html">Cast</a></div>
+				<div><a class="navlinks" href="gallery.html">Gallery</a></div>
+		
+		
+		</div>
+
+	</header>
+
+
+<div id="content1">
+
+	<div id="season2">
+		<h1>Legion returns for Season 2 in 2018</h1>
+	</div>
+
+	<!-- <div id="title">
+		<h1>LEGION</h1>
+	</div> -->
+
+	<div id="intro">
+		<p>Legion is FX and Marvel Television's new series exploring the universe of the X-Men character Legion, created by comic book veterans Chris Claremont and Bill Sienkiewicz. Series showrunner, director, and writer Noah Hawley (FX's Fargo) brings a unique perspective to the storied world of Marvel Television and adds his chapter to the Marvel universe. Unravel the mysteries of the Legion universe. Only on FX.</p>
+	</div>
+
+	<div id="premiere">
+
+		<h2>Premiere Date</h2>
+		<p>February 8, 2017</p>
+	</div>
+		
+</div>
+
+
+<!-- div for locally embedded video with controls-->
+	<div id="video">
+
+	<video width="853" height="505" controls>
+	<source src="videos/legion.mp4">
+	</video>
+
+	</div>
+
+<div id="content2">
+
+	<div id="reviewsheading">	
+		<h2>Reviews</h2>
+	</div>
+
+	<div id="reviews">
+
+		<div id="review1">
+			<p>"EVERY SCENE IS A DENSE VISUAL AND SONIC CORNUCOPIA...PACKED WITH CLASHING SOUNDSCAPES, LUSH VISUALS AND <br>
+			ANACRHONISTIC FASHION"</p>
+				<br>
+			<p>- VILLAGE VOICE</p>
+		</div>
+
+		<div id="review2">
+			<p>"IT'S NO ORDINARY COMIC BOOK SHOW: IT'S A HEAD TRIP, AND IT'S SPECTACULAR"</p>
+			<br>
+				<p>- THE NEW YORK TIMES</p>
+		</div>
+
+		<div id="review3">
+			<p>"TURN OFF THOSE OTHER SUBPAR COMIC BOOK SHOWS: THIS IS THE SERIES YOU SHOULD BE BINGEING"</p>
+			<br>	
+			<p>- VANITY FAIR</p>
+		</div>
+
+	</div>
+</div>
+
+
+<footer>
+
+	<div id="socialmedia">
+		<div>
+			<a class="icons" href="https://twitter.com/legionfx?lang=en"><img src="images/twitter.png" width="50" height="50"></a>
+
+			<a class="icons" href="https://www.instagram.com/legion_fx/"><img src="images/instagram.png" width="50" height="50"></a>
+
+			<a class="icons" href="https://www.facebook.com/legionfx/"><img src="images/facebook.png" width="50" height="50"></a>
+
+			<a class="icons" href="https://www.youtube.com/user/FXNetworks"><img src="images/youtube.png" width="50" height="50"></a>
+		</div>
+	</div>	
+
+</div>
+</div>
+</footer>
+
+
+</body>
+</html>

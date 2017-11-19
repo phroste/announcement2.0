@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<title>Legion - Gallery</title>
+
+		<link href="styles/style.css" rel="stylesheet" type="text/css">
+
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+		<style type="text/css">
+		
+		/*keyframe animation - when homescreen is clicked, the screen fades into the next frame*/
+		@keyframes screen {
+		0% {
+			opacity: 0;
+		}
+		70% {
+			opacity: .5;
+		}
+		100% {
+			opacity: 1;
+		}
+		}
+		
+		/*z-index gives a layer effect to the fade in keyframe, opacity animation is set at full 2 seconds*/
+		#para {
+			z-index: 1;
+			animation: screen 1s ease-in 0s;
+		}
+
+	</style>
+
+</head>
+
+	<header>
+		<div id="logo">
+			<!-- Legion Logo or text position fixed at top of page -->
+			<div><img src="images/logo2.png"><div>
+		</div>
+
+			<!-- position: fixed in CSS to have a fixed nav bar -->
+		<div id="navbar">
+		
+			
+				<div><a href="index.html">Home</a></div>
+				<div><a href="about.html">About</a></div>
+				<div><a href="cast.html">Cast</a></div>
+				<div><a href="gallery.html">Gallery</a></div>
+		
+		
+		</div>
+
+	</header>
+
+<div id="para">
+<body>
+
+<div id="gallerycontent">
+
+		<div id="galleryheading">
+		<h2>Gallery</h2>
+		</div>
+
+		<div id="gallery">
+
+			<div id="slidebuttons">
+			<!-- these are the left and right slideshow buttons -->
+			<a class="rightbutton" onclick="plusDivs(-1)">&#10094;</a>
+
+			<a class="rightbutton" onclick="plusDivs(+1)">&#10095;</a>
+			</div>
+
+			<div>
+			<img class="images" src="images/g1.jpg">
+			</div>
+			
+			<div>
+			<img class="images" src="images/g2.jpg">
+			</div>
+			
+			<div>
+			<img class="images" src="images/g3.jpg">
+			</div>
+			
+			<div>		
+			<img class="images" src="images/g4.jpg">
+			</div>
+			
+			<div>
+			<img class="images" src="images/g5.jpg">
+			</div>
+
+			<div>		
+			<img class="images" src="images/g6.jpg">
+			</div>
+			
+			<div>
+			<img class="images" src="images/g7.jpg">
+			</div>
+			
+			<div>
+			<img class="images" src="images/g8.jpg">	
+			</div>
+
+			<div>
+			<img class="images" src="images/g9.jpg">
+			</div>
+
+	</div>
+</div>
+
+
+<div id="socialmedia">
+		<div>
+			<a class="icons" href="https://twitter.com/legionfx?lang=en"><img src="images/twitter.png" width="50" height="50"></a>
+
+			<a class="icons" href="https://www.instagram.com/legion_fx/"><img src="images/instagram.png" width="50" height="50"></a>
+
+			<a class="icons" href="https://www.facebook.com/legionfx/"><img src="images/facebook.png" width="50" height="50"></a>
+
+			<a class="icons" href="https://www.youtube.com/user/FXNetworks"><img src="images/youtube.png" width="50" height="50"></a>
+		</div>
+</div>	
+
+</div>
+
+<script type="text/javascript">
+	
+	//imagesIndex is a variable that is being passed to showDivs with the var imagesIndex=1
+	var imagesIndex = 1;
+	showDivs(imagesIndex);
+
+	//n is a parameter that is not defined yet
+	function plusDivs(n) {
+		showDivs(imagesIndex += n);
+	}
+	//n is being passed to showDivs
+	function showDivs(n) {
+
+		var i;
+        var x = document.getElementsByClassName("images");
+        //if n > legnth of x (which was defined by the length of images)
+        if (n > x.length) {imagesIndex = 1}
+        	//if n < 1, it jumps to the end (9), since there is more images, make imageIndex = 9
+            if (n < 1) {imagesIndex = x.length}
+                var i = 0
+            	//if i < length of x (which is 9, since we have 9 images)
+                while (i < x.length) {
+                	//x counts the place of i in the array and displays only that image
+                    x[i].style.display = "none";
+                    //if x is less than i (9) images, move on to next image
+                    i += 1;
+                }
+                //if x is less than i (9) images, move on to next image
+                x[imagesIndex-1].style.display = "block";
+    }
+
+</script>
+
+</body>
+
+
+
+</html>

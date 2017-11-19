@@ -1,0 +1,215 @@
+/*styles entire document*/
+
+	* {
+		font-family: 'PT Sans', sans-serif;
+		color: white;
+		/*background-color: black;*/
+		/*background-image: url(../images/background.jpg);*/
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		/*max-width: 100%;*/
+		margin: 0 auto;	
+		letter-spacing: 1px;
+	}
+
+
+
+	/*keyframes animation begins at 100% of nav bar width*/
+	@keyframes frames {
+	0% {
+		width: 100%;
+	}
+
+	/*keyframes animation ends/stops at 15% of nav bar width*/
+	100% {
+		width: 22%;
+	}
+}
+
+	/*fills in the entire window and centers image*/
+	body {
+		background-image: url(../images/background.jpg);
+		/*background-repeat: no-repeat;*/
+		background-size: cover;
+		background-position: center;
+		font-size: 16px;
+	}
+
+	/*justify content centers logo, opacity .6*/
+	#logo {
+		display: flex;
+		justify-content: center;
+		background-color: black;
+		max-width: 100%;
+		opacity: 0.6;
+		/*height: 160px;*/
+	}
+
+
+	/*flex spaces nav links evenly*/
+	#navbar {
+		display: flex;
+		/*justify-content: center;*/
+		/*aligns the nav list evenly*/
+		justify-content: space-around;
+		font-size: 26px;
+		padding-bottom: 20px;
+	}
+
+	/*removes underlines from hyperlinks*/
+	a { 
+	text-decoration: none; 
+	}
+
+	/*changes link color and weight when hovering*/
+	a:hover {
+		color: orange;
+		font-weight: 500;
+	}
+
+	#content1 {
+		margin: 200px;
+		background-color: black;
+		opacity: .7;
+	}
+
+	#season2 {
+		display: flex;
+		justify-content: center;
+		padding-top: 40px;
+	}
+
+	/*#title {
+		display: flex;
+		justify-content: space-around;
+		padding-top: 20px;
+	}*/
+
+	#intro {
+		display: flex;
+		justify-content: center;
+		/*background-color: black;*/
+		padding: 40px 150px 40px 150px;
+		text-align: center;
+	}
+
+	#premiere {
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 40px;
+	}
+
+	#video {
+		display: flex;
+		justify-content: center;
+	}
+
+	#content2 {
+		margin: 200px;
+		background-color: black;
+		opacity: .7;
+		font-size: 18px;
+	}
+
+	#reviewsheading {
+		display: flex;
+		justify-content: : space-around;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	#reviews {
+		display: flex;
+		flex-wrap;
+		background color: black;
+		padding-bottom: 80px;
+	}
+
+	#review1 {
+		flex-wrap: wrap;
+	}
+
+	#review2{ 
+		flex-wrap: wrap;
+	 }
+
+	#review3 {
+		 flex-wrap: wrap;
+	}
+
+
+	#socialmedia {
+		display: flex;
+		justify-content: space-between;
+		background-color: black;
+		padding-top: 10px;
+		padding-bottom: 20px;
+		opacity: .7;
+	}
+
+	.icons {
+		padding: 20px;
+	}
+
+	.icons:hover {
+		opacity: .4;
+	}
+
+
+
+	/*About page*/
+
+	#aboutcontent {
+		display: flex;
+		justify-content: center;
+	}
+
+	#aboutcontent1 {
+		margin: 200px;
+		background-color: black;
+		opacity: .7;
+		padding: 50px;
+	}
+	
+
+	/*cast page*/
+
+	#castcontent {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	#castcontent1 {
+		/*margin: 200px;*/
+		/*background-color: black;*/
+		opacity: 1;
+		padding: 50px;
+	}
+
+	#castgallery {
+		display: flex;
+
+	}
+
+
+	/*gallery page*/
+
+	#gallerycontent {
+		margin: 200px;
+		background-color: black;
+		opacity: .85;
+		padding: 50px;
+	}
+
+	/*aligns slide buttons evenly spaced*/
+	#slidebuttons {
+		display: flex;
+	}
+
+
+
+
+
+
+
